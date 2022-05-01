@@ -22,14 +22,14 @@
 	- log: log for test case tq1, tq2, tq3, tq4
 
 ## Quick Start:
-	### Step1: comiple opt.c
+	### Step 0: Clean up environment includes log files, compiled files, and "testdir" directory
+		type: make clean
+
+	### Step1: comiple opt.c and set up test enviroment "testdir", 
 		type:	"make"
 	
 	### Step2: create alias
 		type: "alias findf="./opt.exe"
-
-	### Step3: create the directories 
-		type:	make idirs
 
 	### syntax:
 		findf [where-to-look] [criteria] [exec command]
@@ -53,14 +53,15 @@
 			rm: remove a file/dir
 			mv: move a file/dir
 	### Make file:
-		make : compile program
-		make clean: clean compiled files
+		make : compile program, set up testing environment "testdir"
+		make clean: clean compiled files, log files, and "tesdir" directory
 		make idirs: create the environemnt for testing "testdir" includes files and directories
 		make ddirs: delete the directories "testdir"
 		make test1: run test1
 		make test2: run test2
 		make test3: run test3
 		make test4: run test4
+		make cleantest: clear log files
 			 
 	### examples:
 		Note: 
