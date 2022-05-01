@@ -1,0 +1,28 @@
+..................................
+BEOFRE DELETE
+****************
+testdir/dir1
+testdir/dir1/dir2
+testdir/dir1/dir2/twomins.txt
+testdir/dir1/twomins
+testdir/test1
+testdir/dir3
+testdir/dir3/dir4
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/dir5
+testdir/dir5/dir6
+testdir/test2
+command: findf testdir/dir1 -m -2 -d
+AFTER DELETE
+testdir/dir1
+testdir/dir1/dir2
+testdir/test1
+testdir/dir3
+testdir/dir3/dir4
+testdir/dir3/test7
+testdir/dir3/test8
+testdir/dir5
+testdir/dir5/dir6
+testdir/test2
+ 
