@@ -10,16 +10,16 @@
 ## date: 04/16/2022
 
 ##Package:
-	+ README.md
-	+ source  : a directory contains all sources and tests
-	++ initDirs.sh : To create a list of directories and files 
-	++ Makefile:	To compile and clean up the project
-	++ opt.c:	a C source file
-	++ tq1.sh : test requirement1[1]
-	++ tq2.sh : test requrement2[2]
-	++ tq3.sh : test requrement3[3]
-	++ tq3.sh : test requirement4[4] 
-	++ log: log for test case tq1, tq2, tq3, tq4
+- README.md
+- source  : a directory contains all sources and tests
+	- initDirs.sh : To create a list of directories and files 
+	- Makefile:	To compile and clean up the project
+	- opt.c:	a C source file
+	- tq1.sh : test requirement1[1]
+	- tq2.sh : test requrement2[2]
+	- tq3.sh : test requrement3[3]
+	- tq3.sh : test requirement4[4] 
+	- log: log for test case tq1, tq2, tq3, tq4
 
 ## Quick Start:
 	### Step1: comiple opt.c
