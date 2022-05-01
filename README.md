@@ -75,4 +75,4 @@
 		findf ./testdir/dir3 -n test7 -a rm: delete the file test 7 at ./testdir/dir3 
 		findf ./testdir -n dir3 -a mv ./testdir/dir5/dir6: move dir3 to dir 6
  
-## Note: An update will be implemented to easier for testing
+#### * * Note: An makefile needs to be update for more convinent and misunderstanding. There are somebugs and bad smell code.
