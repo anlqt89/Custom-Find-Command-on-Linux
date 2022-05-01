@@ -1,0 +1,72 @@
+./tq4.sh
+...................................
+command: findf testdir -n test1 -a cat
+This is test 1
+ÿ 
+..................................
+BEFORE DELETE
+***************
+command: findf testdir/dir1/dir2 -n test6 -a rm
+AFTER DELETE
+ 
+..................................
+BEFORE MOVE FILE
+testdir/dir1
+testdir/dir1/dir2
+testdir/test1
+testdir/oneMinFile.txt
+testdir/dir5
+testdir/dir5/dir6
+testdir/dir5/dir3
+testdir/dir5/dir3/dir4
+testdir/dir5/dir3/test7
+testdir/dir5/dir3/test8
+testdir/oneMinDir
+testdir/test2
+***************
+command: findf testdir/dir5/dir3 -n test7 -a mv testdir/dir5/dir6/test7_moved
+asdAtestdir/dir5/dir6/test7_moved: is new location
+AFTER MOVE FILE
+testdir/dir1
+testdir/dir1/dir2
+testdir/test1
+testdir/oneMinFile.txt
+testdir/dir5
+testdir/dir5/dir6
+testdir/dir5/dir6/test7_moved
+testdir/dir5/dir3
+testdir/dir5/dir3/dir4
+testdir/dir5/dir3/test8
+testdir/oneMinDir
+testdir/test2
+ 
+..................................
+BEFORE MOVE DIRECTORY
+testdir/dir1
+testdir/dir1/dir2
+testdir/test1
+testdir/oneMinFile.txt
+testdir/dir5
+testdir/dir5/dir6
+testdir/dir5/dir6/test7_moved
+testdir/dir5/dir3
+testdir/dir5/dir3/dir4
+testdir/dir5/dir3/test8
+testdir/oneMinDir
+testdir/test2
+***************
+command: findf testdir -n dir3 -a mv testdir/dir5
+AFTER MOVE DIRECTORY
+testdir/dir1
+testdir/dir1/dir2
+testdir/test1
+testdir/oneMinFile.txt
+testdir/dir5
+testdir/dir5/dir6
+testdir/dir5/dir6/test7_moved
+testdir/dir5/dir3
+testdir/dir5/dir3/dir4
+testdir/dir5/dir3/test8
+testdir/oneMinDir
+testdir/test2
+ 
