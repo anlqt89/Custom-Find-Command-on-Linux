@@ -28,7 +28,7 @@
 	### Step2: create alias
 		type: "alias findf="./opt.exe"
 
-	### Step2: create the directories 
+	### Step3: create the directories 
 		type:	make idirs
 
 	### syntax:
