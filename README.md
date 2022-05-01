@@ -1,12 +1,12 @@
 # Project: Find Command
 ## Author: An Lam
 ## Description: Implement an find function for search files and directories inlcudes:
-[1]	+ find where-to-look
-[2]	+ find where-to-look -n <specific name>
-[2]	+ find where-to-look -m <specified number of minutes>
-[2]	+ find where-to-look -i <specified i-node number?
-[3]	+ find where-to-look criteria -delete
-[4]	+ find where-to-look criteria -a
+- [1]	find where-to-look
+- [2]	find where-to-look -n <specific name>
+- [2]	find where-to-look -m <specified number of minutes>
+- [2]	find where-to-look -i <specified i-node number?
+- [3]	find where-to-look criteria -delete
+- [4]	find where-to-look criteria -a
 ## date: 04/16/2022
 
 ##Package:
